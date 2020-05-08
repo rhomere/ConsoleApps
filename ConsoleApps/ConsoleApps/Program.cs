@@ -10,9 +10,11 @@ namespace ConsoleApps
     {
         static void Main(string[] args)
         {
-            var service = new Isogram.IsogramService();
-            service.Intro();
-            service.Execute();
+            //var service = new Isogram.IsogramService();
+            //service.Intro();
+            //service.Execute();
+            var service = new SpreadSheet.SpreadsheetService();
+            service.DoStuff();
         }
     }
 }
