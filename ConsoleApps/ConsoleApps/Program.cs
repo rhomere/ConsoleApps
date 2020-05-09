@@ -10,11 +10,20 @@ namespace ConsoleApps
     {
         static void Main(string[] args)
         {
+            // IsoGramn
             //var service = new Isogram.IsogramService();
             //service.Intro();
             //service.Execute();
-            var service = new SpreadSheet.SpreadsheetService();
-            service.DoStuff();
+
+            // SpreadSheet
+            //var service = new SpreadSheet.SpreadsheetService();
+            //service.DoStuff();
+
+            // Email - Microsoft Exchange WebServices
+            // works for Outlook, UCF.EdU,
+            // doesn't work for Marriott, Gmail
+            var service = new Email.EmailService("emailAddress", "password");
+            var emails = service.GetEmails();
         }
     }
 }
