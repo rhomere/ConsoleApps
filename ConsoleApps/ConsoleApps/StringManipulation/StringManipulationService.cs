@@ -15,6 +15,8 @@ namespace ConsoleApps.StringManipulation
             // else return normal currency string format
             var split = d.ToString().Split(new char[] { '.' });
 
+            if (split.Length == 1) return d.ToString("{0:C}");
+
             var decimals = split.LastOrDefault();
 
             if (decimals == null) return null;
@@ -32,7 +34,7 @@ namespace ConsoleApps.StringManipulation
 
             if (allZeros)
             {
-                return string.Format("${0}.00", split.First());
+                return string.Format("{0:C2}", split.First());
             }
             else
             {
