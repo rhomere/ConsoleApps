@@ -58,6 +58,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpreadSheet\SpreadsheetService.cs" />
+    <Compile Include="StringManipulation\StringManipulationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

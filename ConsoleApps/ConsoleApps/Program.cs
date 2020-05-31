@@ -22,8 +22,11 @@ namespace ConsoleApps
             // Email - Microsoft Exchange WebServices
             // works for Outlook, UCF.EdU,
             // doesn't work for Marriott, Gmail
-            var service = new Email.EmailService("emailAddress", "password");
-            var emails = service.GetEmails();
+            //var service = new Email.EmailService("emailAddress", "password");
+            //var emails = service.GetEmails();
+
+            var service = new StringManipulation.StringManipulationService();
+            var txt = service.ToMoneyOrDefault(150.0000000m);
         }
     }
 }
