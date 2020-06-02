@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="Email\EmailService.cs" />
     <Compile Include="Isogram\IsogramService.cs" />
+    <Compile Include="Misc\Coverage.cs" />
+    <Compile Include="Misc\MiscService.cs" />
     <Compile Include="Models\Partner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
